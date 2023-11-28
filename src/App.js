@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { useRef } from "react";
+
 const initialOptions = {
   clientId:
     "AdoQUb986Cigyd6JiPQYo8h9S7Rh3TIwvQiAE4_4VAUJYHOZ25Fnfa2xC2FhxKwqfxMcx5X12x021RXJ",
@@ -9,7 +8,6 @@ const initialOptions = {
   intent: "capture",
 };
 function App() {
-  const textboxRef = useRef(null);
   return (
     <div className="App">
       <PayPalScriptProvider options={initialOptions}>
